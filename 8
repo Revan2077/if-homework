@@ -1,0 +1,13 @@
+# Get temperature
+temperature = float(input("Enter the water temperature: "))
+
+# check state of water
+if temperature < 0:
+    state = "frozen"
+elif temperature < 100:
+    state = "liquid"
+else:
+    state = "vaporized"
+
+# Print the state of water
+print("The water is", state)

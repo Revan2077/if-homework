@@ -1,0 +1,23 @@
+# Get grades
+grade1 = float(input("Enter the first grade: "))
+grade2 = float(input("Enter the second grade: "))
+grade3 = float(input("Enter the third grade: "))
+grade4 = float(input("Enter the fourth grade: "))
+
+# Calculate GPA
+gpa = (grade1 + grade2 + grade3 + grade4) / 4
+
+# check the GPA and give score
+if gpa > 18:
+    grade = "A"
+elif gpa > 16:
+    grade = "B"
+elif gpa > 14:
+    grade = "C"
+elif gpa > 10:
+    grade = "D"
+else:
+    grade = "Failed"
+
+# print result
+print(f"GPA is {gpa} and grade is {grade}.")
